@@ -1,3 +1,7 @@
+addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+})
+
 const list = {
     'codes' : [
         {
@@ -19,6 +23,10 @@ const list = {
         {
             "name" : "Trio",
             "code" : 4658352659
+        },
+        {
+            "name" : "Bhdbd",
+            "code" : 9075467895
         },
         
     ]
@@ -46,6 +54,9 @@ document.getElementById("submit").addEventListener('click', (e) => {
     }
     else if(reso == 'Trio'){
         window.location.href = 'messages/trio.html';
+    }
+    else if(reso == 'Bhdbd'){
+        window.location.href = 'messages/bhdbd.html';
     }
     else {
         alert(reso);
